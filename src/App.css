@@ -1,42 +1,70 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* bodyのスタイル */
+body {
+  background-color: #f4f4f4;  /* 背景色 */
+  margin: 0;  /* ページの余白をゼロに */
+  padding: 0; /* ページの余白をゼロに */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* ヘッダーのスタイル */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7edc92;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 20px;  /* パディングを追加 */
+  margin: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* 掲示板タイトル */
+.keiziban {
+  color: #ffffff;
+  font-size: 24px;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* 新規スレッドリンク */
+.thread-sakusei {
+  color: #ffffff;
+  padding: 10px;
+  font-weight: bold;
+  margin-left: 20px;
+  white-space: nowrap;  /* テキストが折り返されないように */
 }
 
-.card {
-  padding: 2em;
+/* スレッドリストのスタイル */
+.thread-list {
+  margin: 20px auto 0;  /* 上部マージンと自動左右中央寄せ */
+  width: 800px;  /* 横幅設定 */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;  /* 背景色 */
 }
 
-.read-the-docs {
-  color: #888;
+/* スレッドカードのスタイル */
+.thread-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: left;
+  font-size: 18px;
+}
+
+/* スレッドカードのホバー時のスタイル */
+.thread-card:hover {
+  background-color: #f1f1f1;
+}
+
+/* 新規スレッドリンクのスタイル */
+.new-thread-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  padding-left: 10px;
+  display: inline-block;
+  margin-top: 5px;
 }
