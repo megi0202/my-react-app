@@ -24,12 +24,13 @@ body {
 }
 
 /* 新規スレッドリンク */
-.thread-sakusei {
+.sakusei {
   color: #ffffff;
   padding: 10px;
   font-weight: bold;
   margin-left: 20px;
   white-space: nowrap;  /* テキストが折り返されないように */
+  text-decoration:underline solid #ffffff;
 }
 
 /* スレッドリストのスタイル */
@@ -68,3 +69,6 @@ body {
   display: inline-block;
   margin-top: 5px;
 }
+
+
+

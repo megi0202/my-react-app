@@ -1,12 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import './App.css';
 
 function Header({ threads }) {
   return (
     <div className="header">
       <h1 className="keiziban">掲示板</h1>
-      <div className="thread-sakusei">
-        <h2>{threads.length > 0 ? threads[0].title : '新規作成画面'}</h2>
-      </div>
+      <Link to="/threads/new" className="sakusei">スレッド新規作成</Link>
     </div>
   );
 }

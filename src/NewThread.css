@@ -1,0 +1,69 @@
+.board {
+  text-align: center; /* 内部のテキストを中央揃え */
+  
+  margin: 0 auto;     /* 中央に配置 */
+  padding: 20px;      /* 上下左右の余白を追加 */
+  box-sizing: border-box; /* パディングも含めた幅の計算 */
+}
+
+.title {
+  font-size: 32px;      /* タイトルをより目立たせるため拡大 */
+  padding: 20px 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center; 
+}
+
+.content {
+  margin-top: 50px;
+  text-align: center;   /* 内部のテキストを中央揃え */
+}
+
+.nyuuryoku {
+  width: 100%;           /* 入力フィールドを親要素幅いっぱいに広げる */
+  max-width: 600px;      /* 最大幅を600pxに制限 */
+  height: 60px;          /* 高さを少し拡大 */
+  font-size: 18px;       /* テキストサイズを大きく */
+  padding: 10px;         /* 内側の余白 */
+  border: 2px solid #ccc; /* 外枠の色と太さ */
+  border-radius: 8px;    /* 角を少し丸める */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* 影を強調 */
+  outline: none;         /* フォーカス時のデフォルトのアウトラインを非表示 */
+}
+
+.nyuuryoku:focus {
+  border-color: #50c878; /* フォーカス時の枠線を緑に変更 */
+  box-shadow: 0 0 10px rgba(80, 200, 120, 0.6); /* フォーカス時に光るようなエフェクト */
+}
+
+.buttons {
+  display: flex;
+  justify-content: center; /* ボタンを中央揃え */
+  gap: 20px;              /* ボタン間のスペースを広げる */
+  margin-top: 30px;       /* 全体的な余白を追加 */
+}
+
+.modoru {
+  
+  color: black;
+  
+  padding: 10px;
+  width: 200px;              /* ボタン幅を広げる */
+  height: 70px;              /* ボタン高さを拡大 */
+  font-size: 18px;           /* テキストを大きく */
+  cursor: pointer;
+  border-radius: 8px;        /* 角丸を統一 */
+}
+
+.button-submit {
+  background-color: #50c878; /* 緑色 */
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 180px;              /* ボタン幅を拡大 */
+  height: 65px;              /* ボタン高さを調整 */
+  font-size: 18px;           /* テキストを大きく */
+  cursor: pointer;
+  border-radius: 8px;        /* 角丸を統一 */
+}

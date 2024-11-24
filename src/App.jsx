@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import Header from './Header';
 
+
 function App() {
   const [threads, setThreads] = useState([]); // スレッドデータの状態管理
 
@@ -28,7 +29,7 @@ function App() {
       <div className="thread-list">
         <h1>新着スレッド</h1>
         {threads.length > 1 ? (
-          threads.slice(1).map(thread => (
+          threads.map(thread => (
             <div key={thread.id} className="thread-card">
               <h2>{thread.title}</h2>
             </div>
