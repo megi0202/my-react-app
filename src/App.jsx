@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Header from './Header';
+import { Link } from 'react-router-dom';
 
 
 function App() {
@@ -31,7 +32,8 @@ function App() {
         {threads.length > 1 ? (
           threads.map(thread => (
             <div key={thread.id} className="thread-card">
-              <h2>{thread.title}</h2>
+              
+              <Link to={`/threads/${thread.id}`} className="toukou">{thread.title}</Link>
             </div>
           ))
         ) : (

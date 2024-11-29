@@ -11,7 +11,6 @@ const NewThread = () => {
   // フォーム送信時に呼ばれる関数
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Threads before submit:', threads); 
 
     try {
       const response = await fetch('https://railway.bulletinboard.techtrain.dev/threads', {
@@ -25,7 +24,6 @@ const NewThread = () => {
       if (response.ok) {
         const newThread = await response.json();
         console.log('New thread created:', newThread); // 新しく作成したスレッドの内容を確認
-        setThreads((prevThreads) => [...prevThreads, newThread]); 
         navigate('/'); // スレッド一覧画面に遷移
       } else {
         const errorData = await response.json();

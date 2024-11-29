@@ -4,6 +4,18 @@ body {
   margin: 0;  /* ページの余白をゼロに */
   padding: 0; /* ページの余白をゼロに */
 }
+.toukou {
+  font-size: 2rem; /* 文字サイズを大きく */
+  color: #333; /* 読みやすい濃いグレー */
+  line-height: 1.6; /* 少し余白を増やして読みやすく */
+  word-wrap: break-word; /* 長い単語の自動改行 */
+  padding: 10px; /* 内側の余白を追加 */
+ 
+  border-radius: 5px; /* 角を丸めて柔らかい印象に */
+  
+  text-decoration: none; /* 下線を削除 */
+
+}
 
 /* ヘッダーのスタイル */
 .header {
@@ -69,6 +81,5 @@ body {
   display: inline-block;
   margin-top: 5px;
 }
-
 
 

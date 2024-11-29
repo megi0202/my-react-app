@@ -1,0 +1,123 @@
+/* ThreadPosts.css */
+
+/* ヘッダー部分 */
+.thread-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* タイトル */
+.thread-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* エラーメッセージ */
+.thread-error-message {
+  color: #d9534f;
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* 投稿フォーム */
+.thread-post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.thread-post-input {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  resize: none;
+}
+
+.thread-post-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.thread-post-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.thread-post-button:hover {
+  background-color: #0056b3;
+}
+
+/* 投稿カード */
+.thread-post-card {
+  background-color: #f7f7f7;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.thread-post-text {
+  font-size: 1em;
+  color: #333;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+/* 投稿がない場合 */
+.thread-no-posts {
+  font-size: 1.2em;
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* 「もっと見る」ボタン */
+.thread-load-more-button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
+
+.thread-load-more-button:hover {
+  background-color: #218838;
+}
+
+/* ロード中メッセージ */
+.thread-loading-message {
+  text-align: center;
+  color: #007bff;
+  font-size: 1em;
+  margin-top: 15px;
+}
